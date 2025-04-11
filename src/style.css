@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@400;500;600;700&family=Syne:wght@400..800&display=swap');
+@import "tailwindcss";
+
+@theme{
+  --font-fahkwang: "Fahkwang", sans-serif;
+  --font-syne: "Syne", sans-serif;
+  --font-proxima: "proxima-n-w01-reg", sans-serif;
+}
+
+@font-face {
+  font-family: proxima-n-w01-reg;
+  font-style: normal;
+  font-display: swap;
+  src: url("/src/assets/fonts/proxima-n-w01-reg.woff") format("woff");
+}
+
+.custom-cursor{
+  cursor: url(/src/assets/img/cursor.svg), pointer;
+}
