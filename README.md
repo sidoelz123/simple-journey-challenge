@@ -15,10 +15,10 @@
     <a href="#">
     <img src="https://img.shields.io/badge/-%F0%9F%98%8E%20view%20demo-F3F781?style=for-the-badge" alt="View Demo">
   </a>
-  <a href="https://github.com/sidoelz123/MedpointSystemCMS/issues/new?labels=bug&template=bug-report---.md">
+  <a href="https://github.com/sidoelz123/simple-journey-challenge/issues/new?labels=bug&template=bug-report---.md">
     <img src="https://img.shields.io/badge/-%F0%9F%90%9E%20report%20bug-F5A9A9?style=for-the-badge" alt="Report Bug">
   </a>
-  <a href="https://github.com/sidoelz123/MedpointSystemCMS/issues/new?labels=enhancement&template=feature-request---.md">
+  <a href="https://github.com/sidoelz123/simple-journey-challenge/issues/new?labels=enhancement&template=feature-request---.md">
     <img src="https://img.shields.io/badge/-%E2%9C%A8%20request%20feature-A9D0F5?style=for-the-badge" alt="Request Feature">
   </a>
   </p>
