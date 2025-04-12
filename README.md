@@ -3,7 +3,7 @@
 
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="./src/assets/img/docs-logo.png" alt="Logo" height="80" style="border-radius:0.75rem">
+    <img src="src/assets/img/docs-logo.png" alt="Logo" height="80" style="border-radius:0.75rem">
   </a>
 
 <h3 align="center">Simple Journey</h3>
