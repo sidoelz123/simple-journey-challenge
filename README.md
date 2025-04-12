@@ -12,7 +12,7 @@
     Project Mirroring for Technical Test
     <br />
     <br />
-    <a href="simple-journey-challenge.vercel.app" target=”_blank” >
+    <a href="simple-journey-challenge.vercel.app" target="_blank" rel="noopener noreferrer" >
     <img src="https://img.shields.io/badge/-%F0%9F%98%8E%20view%20demo-F3F781?style=for-the-badge" alt="View Demo">
   </a>
   <a href="https://github.com/sidoelz123/simple-journey-challenge/issues/new?labels=bug&template=bug-report---.md">
