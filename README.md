@@ -1,5 +1,148 @@
-# Vue 3 + TypeScript + Vite
+<a id="readme-top"></a>
+<br />
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<div align="center">
+  <a href="https://github.com/github_username/repo_name">
+    <img src="./src/assets/img/docs-logo.png" alt="Logo" height="80" style="border-radius:0.75rem">
+  </a>
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+<h3 align="center">Simple Journey</h3>
+
+  <p align="center">
+    Project Mirroring for Technical Test
+    <br />
+    <br />
+    <a href="#">
+    <img src="https://img.shields.io/badge/-%F0%9F%98%8E%20view%20demo-F3F781?style=for-the-badge" alt="View Demo">
+  </a>
+  <a href="https://github.com/sidoelz123/MedpointSystemCMS/issues/new?labels=bug&template=bug-report---.md">
+    <img src="https://img.shields.io/badge/-%F0%9F%90%9E%20report%20bug-F5A9A9?style=for-the-badge" alt="Report Bug">
+  </a>
+  <a href="https://github.com/sidoelz123/MedpointSystemCMS/issues/new?labels=enhancement&template=feature-request---.md">
+    <img src="https://img.shields.io/badge/-%E2%9C%A8%20request%20feature-A9D0F5?style=for-the-badge" alt="Request Feature">
+  </a>
+  </p>
+</div>
+
+<!-- ABOUT THE PROJECT -->
+
+## 🚀 About The Project
+
+This project is a mirrored version of the Simple Journey static website, redeveloped using Vue 3. The goal is to complete the Frontend Technical Test by replicating the original design with pixel-perfect accuracy, responsiveness, and clean code structure.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🎯 Objective
+
+Convert the static website available at Simple Journey into a responsive Vue 3 project
+
+## 🛠 Tech Stack
+
+[![Vue][Vue.js]][Vue-url] [![typescript][typescript]][typescript-url] [![tailwind][tailwindcss.com]][tailwind-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 📁 Getting Started
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/sidoelz123/simple-journey-challenge.git
+   ```
+2. Navigate to the Project Directory
+
+    ```sh
+    cd simple-journey-challenge
+    ```
+
+3. Install Depedencies
+   ```sh
+   bun Install
+   ```
+
+4. Start the project
+   ```sh
+   bun dev
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ✅ Evaluation Criteria
+
+- [ ] Code quality and structure
+- [ ] Design accuracy
+- [ ] Responsiveness and cross-browser compatibility
+- [ ] Documentation quality
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📁 Project Structure
+
+```sh
+📦 simple-journey
+├── 📁 node_modules
+├── 📁 public
+├── 📁 src/
+│   ├── 📁 assets/          # Contains static assets like images, fonts,etc
+│   ├── 📁 components       # Reusable UI components
+│   ├── 📁 pages/           # Defines the overall layout of different pages or sections of the application.
+│   │   └── 📁 HomePage/    # contains the layout specific to the home page and other
+│   │   │   └──  📄 index.tsx
+│   │   └── ....
+│   │
+│   ├── 📁 router/         # Handles navigation within the application
+│   │   └──  📄 index.tsx
+│   ├──  📄 app.vue
+│   ├──  📄 style.css
+│   ├──  📄 main.ts
+│   └──  📄 vite-env.d.ts
+├──  📄 index.html
+├──  📄 .gitignore
+├──  📄 README.md
+├──  📄 bun.lock
+├──  📄 index.html
+├──  📄 package.json
+├──  📄 tsconfig.app.json
+├──  📄 tsconfig.json
+├──  📄 tsconfig.node.json
+└──  📄 vite.config.ts
+
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ### Top contributors:
+
+<a href="https://github.com/sidoelz123/MedpointSystemCMS/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=sidoelz123/MedpointSystemCMS" alt="contrib.rocks image" />
+</a>
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/sidoelz123/MedpointSystemCMS.svg?style=for-the-badge
+[contributors-url]: https://github.com/sidoelz123/MedpointSystemCMS/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/sidoelz123/MedpointSystemCMS.svg?style=for-the-badge
+[forks-url]: https://github.com/sidoelz123/MedpointSystemCMS/network/members
+[stars-shield]: https://img.shields.io/github/stars/sidoelz123/MedpointSystemCMS.svg?style=for-the-badge
+[stars-url]: https://github.com/sidoelz123/MedpointSystemCMS/stargazers
+[issues-shield]: https://img.shields.io/github/issues/sidoelz123/MedpointSystemCMS.svg?style=for-the-badge
+[issues-url]: https://github.com/sidoelz123/MedpointSystemCMS/issues
+[license-shield]: https://img.shields.io/github/license/sidoelz123/MedpointSystemCMS.svg?style=for-the-badge
+[license-url]: https://github.com/sidoelz123/MedpointSystemCMS/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/ihzamz
+[product-screenshot]: images/screenshot.png
+[typescript]: https://img.shields.io/badge/TypeScript-20232A?style=for-the-badge&logo=typescript
+[typescript-url]: https://www.typescriptlang.org/
+[Vue.js]: https://img.shields.io/badge/Vue.js-20232A?style=for-the-badge&logo=vuedotjs
+[Vue-url]: https://vuejs.org/
+[Tailwindcss.com]: https://img.shields.io/badge/Tailwind_CSS-20232A?style=for-the-badge&logo=tailwind-css
+[Tailwind-url]: https://tailwindcss.com
