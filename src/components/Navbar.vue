@@ -37,13 +37,10 @@ onUnmounted(() => {
   >
     <div class="px-4 sm:px-6 lg:px-10">
       <div class="flex justify-between items-center py-5">
-        <!-- Logo -->
         <div class="flex items-center gap-2 text-3xl font-bold font-syne">
           <p>SimpleJourney</p>
           <Logo class="text-white w-5 h-5" />
         </div>
-
-        <!-- Desktop Menu -->
         <nav
           class="hidden md:flex space-x-3 bg-white/50 backdrop-blur-md px-2 py-3 rounded-full text-xl text-black font-medium"
         >
@@ -52,8 +49,6 @@ onUnmounted(() => {
           <RouterLink to="/about" class="transition duration-300 hover:bg-white py-1.5 px-9 rounded-3xl">About</RouterLink>
           <RouterLink :to="{ path: '/', hash: '#contact' }" class="transition duration-300 hover:bg-white py-1.5 px-9 rounded-3xl">Contact Us</RouterLink>
         </nav>
-
-        <!-- Mobile Button -->
         <div class="md:hidden">
           <button class="text-white focus:outline-none w-20 h-20">
             <svg data-bbox="20 76.4 160 47.2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" data-type="shape">

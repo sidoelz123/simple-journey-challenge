@@ -42,7 +42,6 @@ import Logo from './Logo.vue';
                         <p class="text-end">Instagram</p>
                     </a>
                 </div>
-
             </div>
 
             <p class="mt-10 text-start md:text-end text-sm">
