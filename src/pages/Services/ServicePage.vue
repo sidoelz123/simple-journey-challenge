@@ -3,25 +3,26 @@ import { Contact, Container } from "../../components";
 </script>
 
 <template>
-  <section class="h-[60vh] overflow-hidden relative">
+  <section class="relative h-[50vh] md:h-[60vh] w-full overflow-hidden">
     <video
       autoplay
       muted
       loop
       playsinline
-      class="absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      class="absolute top-0 lg:top-1/2 left-1/2 w-auto min-w-full min-h-full max-w-none transform -translate-x-1/2 -translate-y-1/2 object-cover"
     >
       <source src="../../assets/img/bg-services.mp4" type="video/mp4" />
       Browser kamu tidak mendukung video.
     </video>
   </section>
+  
   <section>
     <Container>
       <h1 class="text-center mt-24 mb-16 text-3xl md:text-4xl lg:text-5xl font-bold font-syne">
         Our Services
       </h1>
   
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-24 px-4 md:px-0">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-24 px-4 md:px-0">
         <div>
           <img class="w-full" src="../../assets/img/Server.avif" alt="" />
           <p class="text-center text-lg md:text-xl mt-6 md:mt-8">Infrastructure Solution</p>

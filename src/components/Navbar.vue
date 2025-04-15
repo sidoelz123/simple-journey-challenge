@@ -1,9 +1,16 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 import Logo from './Logo.vue'
+import NavModals from './NavModals.vue'
 
 const isScrolled = ref(false)
 const shouldHideNavbar = ref(false)
+const isModalOpen = ref(false)
+
+const toggleModal = () => {
+  isModalOpen.value = !isModalOpen.value
+}
+
 let lastScrollY = window.scrollY
 const SCROLL_THRESHOLD = 500
 const handleScroll = () => {
@@ -11,21 +18,16 @@ const handleScroll = () => {
   isScrolled.value = currentScrollY > 10
 
   if (currentScrollY > SCROLL_THRESHOLD && currentScrollY > lastScrollY) {
-    shouldHideNavbar.value = true // Hide navbar
+    shouldHideNavbar.value = true
   } else {
-    shouldHideNavbar.value = false // Show navbar
+    shouldHideNavbar.value = false
   }
 
   lastScrollY = currentScrollY
 }
 
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
-})
+onMounted(() => window.addEventListener('scroll', handleScroll))
+onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 </script>
 <template>
   <header
@@ -42,15 +44,15 @@ onUnmounted(() => {
           <Logo class="text-white w-5 h-5" />
         </div>
         <nav
-          class="hidden md:flex space-x-3 bg-white/50 backdrop-blur-md px-2 py-3 rounded-full text-xl text-black font-medium"
+          class="hidden lg:flex space-x-3 bg-white/50 backdrop-blur-md px-2 py-3 rounded-full text-xl text-black font-medium"
         >
           <RouterLink to="/" class="transition duration-300 hover:bg-white py-1.5 px-9 rounded-3xl">Home</RouterLink>
           <RouterLink to="/services" class="transition duration-300 hover:bg-white py-1.5 px-9 rounded-3xl">Services</RouterLink>
           <RouterLink to="/about" class="transition duration-300 hover:bg-white py-1.5 px-9 rounded-3xl">About</RouterLink>
           <RouterLink :to="{ path: '/', hash: '#contact' }" class="transition duration-300 hover:bg-white py-1.5 px-9 rounded-3xl">Contact Us</RouterLink>
         </nav>
-        <div class="md:hidden">
-          <button class="text-white focus:outline-none w-20 h-20">
+        <div class="lg:hidden">
+          <button @click="toggleModal" class="text-white hover:text-black transition duration-500 focus:outline-none w-20 h-20">
             <svg data-bbox="20 76.4 160 47.2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" data-type="shape">
               <g>
                 <path fill="currentColor" d="M180 76.4v2.7H20v-2.7h160z"></path>
@@ -63,4 +65,5 @@ onUnmounted(() => {
       </div>
     </div>
   </header>
+  <NavModals :is-open="isModalOpen" @close="isModalOpen = false" />
 </template>
