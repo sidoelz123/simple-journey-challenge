@@ -28,13 +28,13 @@ const onSubmit = handleSubmit((values: any) => {
 </script>
 
 <template>
-  <section id="contact" class="h-screen bg-gradient-to-br from-neutral-600 from-0% to-neutral-400 to-100%">
+  <section id="contact" class="lg:h-screen bg-gradient-to-br from-neutral-600 from-0% to-neutral-400 to-100%">
     <Container class="py-20">
-      <div class="w-3/5 text-white pb-10">
-        <h1 class="text-5xl/16 font-fahkwang">Ready to power your future with sustainable energy?</h1>
-        <p class="text-lg mt-8">Fill out the form below and let Viento's experts help</p>
+      <div class="lg:w-3/5 text-white pb-10">
+        <h1 class="text-3xl lg:text-5xl/16 font-fahkwang">Ready to power your future with sustainable energy?</h1>
+        <p class="text-sm lg:text-lg mt-8">Fill out the form below and let Viento's experts help</p>
       </div>
-      <form @submit.prevent="onSubmit" class="grid grid-cols-3 grid-rows-4 text-white text-sm gap-8 px-10">
+      <form @submit.prevent="onSubmit" class="grid grid-cols-3 grid-rows-4 text-white text-sm gap-2 lg:gap-8 px-10 items-end">
         <BaseInput v-model="form.firstname" name="firstname" label="First Name" required />
         <BaseInput v-model="form.lastname" name="lastname" label="Last Name" required />
         <BaseInput v-model="form.email" name="email" label="Email" required />
@@ -46,7 +46,7 @@ const onSubmit = handleSubmit((values: any) => {
         </div>
         <button type="submit"
           class="col-start-2 row-start-4 bg-cyan-300 h-fit hover:bg-black py-3 w-full rounded-full text-black hover:text-white transition duration-300">
-          Submit
+          Contact Us
         </button>
       </form>
     </Container>

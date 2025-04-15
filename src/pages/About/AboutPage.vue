@@ -11,7 +11,7 @@ import { Container } from '../../components';
             <h1 class="font-fahkwang text-4xl">Press Release</h1>
             <p class="">Leading the way in sustainable energy</p>
         </div>
-        <div class="h-[450px] flex flex-col justify-center items-center mb-80">
+        <div class="lg:h-[450px] flex flex-col justify-center items-center mb-80">
          <h1 class="font-fahkwang text-3xl">Check back soon</h1>
          <p class="">Once posts are published, you'll see them here.</p>
         </div>

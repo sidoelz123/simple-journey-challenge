@@ -5,8 +5,6 @@ const routes = [
   { path: "/", component: HomePage, name: "home" },
   { path: "/services", component: ServicePage, name: "service" },
   { path: "/about", component: AboutPage, name: "about" },
-  { path: "/#contact", component: HomePage, name: "contact" },
-  // { path: "/:pathMatch(.*)*", name: "notfound", component:  },
 ];
 
 const router = createRouter({

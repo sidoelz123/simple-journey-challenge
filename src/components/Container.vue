@@ -8,7 +8,7 @@ const props = defineProps<{
 
 <template>
   <section
-    :class="['mx-auto px-20', props.customClass]"
+    :class="['mx-auto px-7 lg:px-20', props.customClass]"
   >
     <slot />
   </section>
