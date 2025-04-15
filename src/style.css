@@ -5,15 +5,19 @@
   --font-fahkwang: "Fahkwang", sans-serif;
   --font-syne: "Syne", sans-serif;
   --font-proxima: "proxima-n-w01-reg", sans-serif;
+  --color-peach: #FFE9DF
 }
 
 @font-face {
   font-family: proxima-n-w01-reg;
   font-style: normal;
   font-display: swap;
-  src: url("/src/assets/fonts/proxima-n-w01-reg.woff") format("woff");
+  font-weight: 400,500,600,700,800;
+  src: url("/src/assets/fonts/proxima-n-w01-reg.woff2") format("woff2");
 }
 
-.custom-cursor{
-  cursor: url(/src/assets/img/cursor.svg), pointer;
+@layer utilities{
+  .custom-cursor{
+    cursor: url(/src/assets/img/cursor.svg), pointer;
+  }
 }

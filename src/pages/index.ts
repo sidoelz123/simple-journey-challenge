@@ -1,3 +1,5 @@
-import HomePage from './HomePage/index.vue'
+import HomePage from './Home/Homepage.vue'
+import AboutPage from './About/AboutPage.vue'
+import ServicePage from './Services/ServicePage.vue'
 
-export {HomePage}
+export {HomePage,AboutPage,ServicePage}
